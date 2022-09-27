@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:aquamarine;
+  color: white;
+  top: 0;
+  position : sticky;
+}
+.nav-logo {
+  font-size: 20px;
+  margin: 20px;
+}
+.nav-menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-menu > div {
+  margin-right: 20px;
+}
+.nav-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* header */
+header {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  background-color:darkgreen;
+}
+.header-title {
+  width: 50%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.header-content {
+  width: 70%;
+  font-size: 15px;
+  color:antiquewhite;
+  font-style: italic;
+}
+
+header > section{
+  display : flex;
+  flex-wrap:wrap;
+  font-size:20px;
+  align-items: center;
+}
+
+.header-left{
+  width:10px;
+  font-size:1rem;
+}
+
+/* em : 부모 크기 따라간다. rem : 전체 윈도우에서 잡는 크기의 상대적 크기 */
+
+
+/* main */
+main {
+  text-align: center;
+  display: flex;
+  background-color:darkgray;
+}
+.main-item {
+  width: 25%
+}
+.main-title {
+  font-size: 15px;
+  color:whitesmoke;
+  margin: 15px;
+  background-color: darkolivegreen;
+  font-style:initial;
+  font-weight: bold;
+}
+.main-content {
+  font-size: 15px;
+  margin: 4px;
+  color:bisque;
+  font-weight:400;
+}
+main img {
+  border-radius: 50%;
+}
+
+
+/* footer */
+footer {
+  padding: 15px 25px;
+  background-color:lightgoldenrodyellow;
+  display:flex;
+  align-items: center;
+  bottom:0;
+  position:sticky;
+  text-align:center;
+}
+footer > div {
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+}
+footer > ul {
+  width: 80%;
+}
+footer > ul > li {
+  list-style: none;
+  font-size:12px;
+  font-weight: bold;
+  
+}
+
+@media only screen and (max-width:700px) {
+  header {
+    flex-direction: column;
+  }
+@media only screen and (max-width:600px) {
+  main {
+    flex-direction: column;
+    display :flex;
+    align-items: center;
+    margin:auto
+  }
+  main.main-content{
+    width:80&
+  }
+  footer > ul {
+    display:none;
+  }
+}

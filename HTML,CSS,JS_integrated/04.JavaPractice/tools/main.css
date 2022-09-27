@@ -1,0 +1,54 @@
+/* 레이아웃 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  
+  background-color: #6750A4;
+  height: 10vh;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top : 0;
+  position: sticky;
+  
+}
+
+main {
+  background-color: #EADDFF;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  margin: 1vh;
+  width: 50vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #381E72;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+button:hover, button:active {
+  background-color: #FFFFFF ;
+    color: black;
+
+}
