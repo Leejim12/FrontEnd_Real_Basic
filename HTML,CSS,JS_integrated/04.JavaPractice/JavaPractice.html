@@ -20,14 +20,15 @@
         // console.log("Hello World!");
     </script> -->
     <!-- 외부 자바스크립트 -->
-    <script src="tools/index.js"></script>
+    <!-- <script src="tools/index.js"></script> -->
+    <script src="tools/dom.js"></script>
 </head>
 
 <body>
     <div id="root">
         <header>
 
-            <h1>자바스크립트연습</h1>
+            <h1>주사위게임</h1>
         </header>
 
         <!-- 여기도 가능 
@@ -36,12 +37,39 @@
             // console.log("Hello World!");
         </script> -->
 
-        <main id="Content">
+        <main id="content">
+            <section id="msg">
+                <div id='DiceResult' class="DiceV">
+                <input type='radio'
+                    name='DiceNo' 
+                    value='1' 
+                    onclick='getDice(event)'/>1
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='2' 
+                    onclick='getDice(event)'/>2
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='3' 
+                    onclick='getDice(event)'/>3
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='4' 
+                    onclick='getDice(event)'/>4
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='5' 
+                    onclick='getDice(event)'/>5
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='6' 
+                    onclick='getDice(event)'/>6
+                </div>
+            </section>
             <section id="bt">
-                <button class="bt1" onclick="funPrint(1);"><span>버튼1</span></button>
-                <button class="bt1" onclick="funPrint(2);"><span>버튼2</span></button>
-
-
+                <button class="bt1" onclick="show();">주사위 굴리기</button>
+                <!-- //<div class ="divmsg"></div> -->
+                <!-- <button class="bt1" onclick=";"><span>버튼2</span></button> -->
             </section>
         </main>
 

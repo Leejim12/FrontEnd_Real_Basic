@@ -22,6 +22,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 main > section {
@@ -29,9 +30,20 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  margin: 2vw;
 }
 
-button {
+.divmsg {
+  display: inline-block;
+  margin: 1vh;
+
+}
+
+/* #msg {
+  display: none; */
+/* } */
+
+button,.divMsg{
   display: inline-block;
   width: 100%;
   margin: 1vh;
@@ -47,8 +59,19 @@ button {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+.DiceV {
+  display:inline-block;
+}
+
+
 button:hover, button:active {
   background-color: #FFFFFF ;
     color: black;
 
+  
 }
+  /* #Dice#{
+    width:100%;
+    flex-direction:row;
+  } */
+
