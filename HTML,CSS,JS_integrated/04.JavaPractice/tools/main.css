@@ -79,6 +79,10 @@ button:hover, button:active {
   background-color: #FFFFFF ;
     color: black;
 
+
+
+
+
 }
   /* #Dice#{
     width:100%;
@@ -147,4 +151,9 @@ button:hover, button:active {
     border-radius: 100%;
     box-shadow: none;
     background-image:-webkit-linear-gradient();
+}
+
+image{
+  display: block;
+  width: 5vw;
 }

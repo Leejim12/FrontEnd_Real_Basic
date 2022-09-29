@@ -1,34 +1,43 @@
+// 랜덤수
+let randNum;
+// 사용자 선택 수 
+let userNum;
 
-  const show = () => {
-    let tag = ""
-    
-    const i = Math.floor(Math.random() * 6 + 1);
-    tag = tag + `<div class=divmsg><img src="tools/image/${i}.png" ></img id="msgImg"></div>`
-
-       console.log(i)
-
-       
-    const m = document.querySelector('#msg')
-    
-    m.innerHTML = tag
-    
-    // let msgImg = document.querySelector('#msgImg')
-    // msgImg.style.maxWidth="100px";
-    // msgImg.style.maxheight="100px";
+// 화면 보기 함수
+const dispDom = (msgP, inNumP, bt1P, bt2P) =>{
+  document.getElementById("msg").style.display = msgP;
+  document.getElementById("inNum").style.display = inNumP;
+  document.getElementById("bt1").style.display = bt1P;
+  document.getElementById("bt2").style.display = bt2P;
+   
+}
 
 
 
+// 주사위
+// function showDice(){}
+ const showDice = () => {
+// function 생략가능
+  console.log("주사위");
+  randNum = Math.floor(Math.random()*6)+1;
+  console.log(`주사위 랜덤수 => ${randNum}`);
+}
+
+
+// dom제어
+  dispDom("block","none","block","none");
+
+ // 확인
+  const showOk = () => {
+    userNum = form1.num.value;
+    console.log(`사용자 선택 수 확인 => ${userNum}`)
   }
 
-/////////////////////////////라디오 버튼////////////
-// {/* <input type="radio" name="DiceNo" id="radio1" value="green"><label for="radio1">그린</label>
-// <input type="radio" name="colors" id="radio2" value="blue" checked><label for="radio2">블루</label>
-// <input type="radio" name="colors" id="radio3" value="red"><label for="radio3">레드</label>
-// <input type="radio" name="colors" id="radio4" value="black"><label for="radio4">블랙</label> */}
+//Dom생성 이후 요소 Crud해야함.
+document.addEventListener("DOMContentLoaded",()=>{
+// document.getElementById("msg").style.display = "none";
+// document.getElementById("inNum").style.display = "none"
+document.getElementById("bt2").style.display = "none"
 
 
-
-
-
-
-
+});
