@@ -39,7 +39,7 @@
 
         <main id="content">
             <section id="msg">
-                <div id='DiceResult' class="DiceV">
+                <!-- <div id='DiceResult' class="DiceV">
                 <input type='radio'
                     name='DiceNo' 
                     value='1' 
@@ -64,12 +64,39 @@
                     name='DiceNo' 
                     value='6' 
                     onclick='getDice(event)'/>6
+                </div> -->
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" class ="No1" name="DiceVaule" value=1 >1
+                            
+                        </li>
+                        <li>
+                            <input type="radio" class ="No2" name="DiceVaule" value=2 >2
+                        </li>
+                        <li>
+                            <input type="radio" class ="No3" name="DiceVaule" value=3 checked>3
+                        </li>
+                        <li>
+                            <input type="radio" class ="No4" name="DiceVaule" value=4 >4
+                        </li>
+                        <li>
+                            <input type="radio" class ="No5" name="DiceVaule" value=5 >5
+                        </li>
+                        <li>
+                            <input type="radio" class ="No6" name="DiceVaule" value=6 >6
+                        </li>
+                    
+                    </ul>
                 </div>
+
+                
             </section>
             <section id="bt">
                 <button class="bt1" onclick="show();">주사위 굴리기</button>
                 <!-- //<div class ="divmsg"></div> -->
                 <!-- <button class="bt1" onclick=";"><span>버튼2</span></button> -->
+                <button class="bt2" onclick="reset();">초기화</button>
             </section>
         </main>
 

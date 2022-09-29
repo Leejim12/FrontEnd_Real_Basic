@@ -1,0 +1,44 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+main {
+  width:100vh;
+  height:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  background-color: aliceblue;
+  width:50vw;
+}
+
+#s1 {
+  background-color: aliceblue;
+  height:70vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc{
+  width: 12%;
+  height: 50px;
+  background-color: aquamarine;
+  margin:0.1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#s2 {
+  background-color: antiquewhite;
+  height:20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
