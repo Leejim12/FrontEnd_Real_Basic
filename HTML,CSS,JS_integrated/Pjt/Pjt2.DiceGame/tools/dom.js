@@ -43,9 +43,9 @@
     //2. DOM에서 태그 넣을 요소 선택
     const m = document.querySelector('#msg')
     if(getDice() == i){
-      tag = tag + `<div class=divmsg><img src="tools/image/O.png" ></img id="msgImg"></div>`
+      tag = tag + `<div class=divmsg><img src="./tools/image/O.png" ></img id="msgImg"></div>`
     }else{
-      tag = tag + `<div class=divmsg><img src="tools/image/X.png" ></img id="msgImg"></div>`
+      tag = tag + `<div class=divmsg><img src="./tools/image/X.png" ></img id="msgImg"></div>`
     }
     console.log()
     //3. 선택된 요소의 HTML 변경

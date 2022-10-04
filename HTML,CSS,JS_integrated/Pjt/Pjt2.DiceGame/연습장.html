@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <title>JS PWA</title>
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="tools/main.css">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- 내부 자바스크립트 -->
+    <!-- 위치1
+    <script>
+        alert("Hello World!");
+        // console.log("Hello World!");
+    </script> -->
+    <!-- 외부 자바스크립트 -->
+    <!-- <script src="tools/index.js"></script> -->
+    <script src="연습장.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <header>
+
+            <h1>주사위게임</h1>
+        </header>
+
+        <!-- 여기도 가능 
+        <script>
+            alert("Hello World!");
+            // console.log("Hello World!");
+        </script> -->
+
+        <main id="content">
+            <section id="msg">
+                <!-- <div id='DiceResult' class="DiceV">
+                <input type='radio'
+                    name='DiceNo' 
+                    value='1' 
+                    onclick='getDice(event)'/>1
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='2' 
+                    onclick='getDice(event)'/>2
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='3' 
+                    onclick='getDice(event)'/>3
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='4' 
+                    onclick='getDice(event)'/>4
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='5' 
+                    onclick='getDice(event)'/>5
+                <input type='radio' 
+                    name='DiceNo' 
+                    value='6' 
+                    onclick='getDice(event)'/>6
+                </div> -->
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" class ="No1" name="DiceVaule" value=1 >1
+                            
+                        </li>
+                        <li>
+                            <input type="radio" class ="No2" name="DiceVaule" value=2 >2
+                        </li>
+                        <li>
+                            <input type="radio" class ="No3" name="DiceVaule" value=3 checked>3
+                        </li>
+                        <li>
+                            <input type="radio" class ="No4" name="DiceVaule" value=4 >4
+                        </li>
+                        <li>
+                            <input type="radio" class ="No5" name="DiceVaule" value=5 >5
+                        </li>
+                        <li>
+                            <input type="radio" class ="No6" name="DiceVaule" value=6 >6
+                        </li>
+                    
+                    </ul>
+                </div>
+
+                
+            </section>
+            <section id="bt">
+                <button class="bt1" onclick="show();">주사위 굴리기</button>
+                <!-- //<div class ="divmsg"></div> -->
+                <!-- <button class="bt1" onclick=";"><span>버튼2</span></button> -->
+                <button class="bt2" onclick="reset();">초기화</button>
+            </section>
+        </main>
+
+
+    </div>
+    <!-- 여기도 가능 
+        
+        <script>
+            alert("Hello World!");
+            // console.log("Hello World!");
+        </script> 
+    -->
+</body>
+
+</html>
